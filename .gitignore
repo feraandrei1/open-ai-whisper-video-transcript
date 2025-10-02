@@ -1,0 +1,13 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Transcripts input/output
+transcripts/
+videos/
+
+# macOS system files
+.DS_Store

@@ -1,0 +1,28 @@
+import os
+import whisper
+
+input_dir = "videos"
+output_dir = "transcripts"
+
+os.makedirs(output_dir, exist_ok=True)
+
+# possible models: tiny, base, small, medium, large
+model = whisper.load_model("large")
+
+video_exts = {".mp4", ".avi", ".mov", ".mkv", ".flv", ".wmv"}
+
+for root, _, files in os.walk(input_dir):
+    for f in files:
+        if os.path.splitext(f)[1].lower() in video_exts:
+            video_path = os.path.join(root, f)
+            base_name = os.path.splitext(f)[0]
+            txt_path = os.path.join(output_dir, f"{base_name}.txt")
+
+            print(f"🎙️ Transcriere: {video_path} ...")
+
+            result = model.transcribe(video_path, language="ro")
+
+            with open(txt_path, "w", encoding="utf-8") as out:
+                out.write(result["text"])
+
+print("DONE")
