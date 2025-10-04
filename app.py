@@ -20,8 +20,8 @@ for root, _, files in os.walk(input_dir):
 
             print(f"🎙️ Transcribing: {video_path} ...")
 
-            # Transcribe video in Romanian
-            result = model.transcribe(video_path, language="ro")
+            # Transcribe video in English
+            result = model.transcribe(video_path, language="en")
 
             with open(txt_path, "w", encoding="utf-8") as out:
                 out.write(result["text"])
