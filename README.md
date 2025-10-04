@@ -18,3 +18,8 @@ Whisper can be used for more than just video-to-text transcription:
 - Voice Notes → Turn recorded voice memos into searchable text.  
 - Meetings & Lectures → Automatically transcribe recordings.  
 - Multilingual Audio → Recognize and transcribe speech in many languages.
+
+## 🌐 More AI Projects
+* [Coqui TTS](https://github.com/coqui-ai/TTS) → Text-to-speech for natural voices.
+* [Riffusion](https://github.com/riffusion/riffusion-hobby) → Real-time music generation with diffusion models.
+* [Stable Diffusion](https://github.com/CompVis/stable-diffusion) → High-quality image generation with text prompts.
