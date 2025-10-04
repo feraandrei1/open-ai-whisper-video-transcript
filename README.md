@@ -9,3 +9,12 @@ ai-video-transcript/
 - videos/ folder = input video files
 - .gitignore
 - README.md
+
+## 🔧 Features
+Whisper can be used for more than just video-to-text transcription:
+- Transcription → Convert audio files (mp3, wav, m4a, etc.) into text.  
+- Translation → Translate non-English speech directly into English text.  
+- Subtitles → Generate `.srt` or `.vtt` subtitle files from videos.  
+- Voice Notes → Turn recorded voice memos into searchable text.  
+- Meetings & Lectures → Automatically transcribe recordings.  
+- Multilingual Audio → Recognize and transcribe speech in many languages.

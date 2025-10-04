@@ -18,8 +18,9 @@ for root, _, files in os.walk(input_dir):
             base_name = os.path.splitext(f)[0]
             txt_path = os.path.join(output_dir, f"{base_name}.txt")
 
-            print(f"🎙️ Transcriere: {video_path} ...")
+            print(f"🎙️ Transcribing: {video_path} ...")
 
+            # Transcribe video in Romanian
             result = model.transcribe(video_path, language="ro")
 
             with open(txt_path, "w", encoding="utf-8") as out:
